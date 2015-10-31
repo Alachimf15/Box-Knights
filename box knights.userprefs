@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\MasterPlayerStateScript.cs">
+    <Files>
+      <File FileName="Assets\Block.cs" Line="47" Column="4" />
+      <File FileName="Assets\player\playerHealth.cs" Line="66" Column="4" />
+      <File FileName="Assets\enemies\enemy scripts\EnemyDoDamage.cs" Line="48" Column="107" />
+      <File FileName="Assets\Standard Assets\MasterPlayerStateScript.cs" Line="52" Column="1" />
+      <File FileName="Assets\Standard Assets\DashingScript.cs" Line="68" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

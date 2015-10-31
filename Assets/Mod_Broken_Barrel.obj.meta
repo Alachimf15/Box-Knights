@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: acad8af91f42a14439fccd5cdc16c76a
+timeCreated: 1444339740
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: polySurface1_Wooden_Barrel:Mesh
+    100004: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface21_polySurface23
+    100006: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface22_polySurface21
+    100008: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface25
+    100010: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface29
+    100012: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface24_polySurface20_polySurface19
+    100014: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface18_polySurface17_polySurface14_polySurface13
+    100016: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface27
+    100018: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface28
+    100020: Wooden_Barrel:Mesh_polySurface2
+    100022: Wooden_Barrel:Mesh_polySurface26_polySurface12_polySurface10_polySurface8_polySurface6
+    100024: Wooden_Barrel:Mesh_polySurface3
+    100026: Wooden_Barrel:Mesh_polySurface5
+    400000: //RootNode
+    400002: polySurface1_Wooden_Barrel:Mesh
+    400004: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface21_polySurface23
+    400006: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface22_polySurface21
+    400008: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface25
+    400010: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface29
+    400012: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface24_polySurface20_polySurface19
+    400014: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface18_polySurface17_polySurface14_polySurface13
+    400016: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface27
+    400018: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface28
+    400020: Wooden_Barrel:Mesh_polySurface2
+    400022: Wooden_Barrel:Mesh_polySurface26_polySurface12_polySurface10_polySurface8_polySurface6
+    400024: Wooden_Barrel:Mesh_polySurface3
+    400026: Wooden_Barrel:Mesh_polySurface5
+    2300000: polySurface1_Wooden_Barrel:Mesh
+    2300002: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface21_polySurface23
+    2300004: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface22_polySurface21
+    2300006: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface25
+    2300008: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface29
+    2300010: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface24_polySurface20_polySurface19
+    2300012: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface18_polySurface17_polySurface14_polySurface13
+    2300014: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface27
+    2300016: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface28
+    2300018: Wooden_Barrel:Mesh_polySurface2
+    2300020: Wooden_Barrel:Mesh_polySurface26_polySurface12_polySurface10_polySurface8_polySurface6
+    2300022: Wooden_Barrel:Mesh_polySurface3
+    2300024: Wooden_Barrel:Mesh_polySurface5
+    3300000: polySurface1_Wooden_Barrel:Mesh
+    3300002: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface21_polySurface23
+    3300004: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface22_polySurface21
+    3300006: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface25
+    3300008: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface29
+    3300010: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface24_polySurface20_polySurface19
+    3300012: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface18_polySurface17_polySurface14_polySurface13
+    3300014: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface27
+    3300016: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface28
+    3300018: Wooden_Barrel:Mesh_polySurface2
+    3300020: Wooden_Barrel:Mesh_polySurface26_polySurface12_polySurface10_polySurface8_polySurface6
+    3300022: Wooden_Barrel:Mesh_polySurface3
+    3300024: Wooden_Barrel:Mesh_polySurface5
+    4300000: polySurface1_Wooden_Barrel:Mesh
+    4300002: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface21_polySurface23
+    4300004: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface19_polySurface22_polySurface21
+    4300006: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface25
+    4300008: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface20_polySurface19_polySurface29
+    4300010: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface17_polySurface14_polySurface13_polySurface24_polySurface20_polySurface19
+    4300012: Wooden_Barrel:Mesh_polySurface10_polySurface8_polySurface6_polySurface18_polySurface17_polySurface14_polySurface13
+    4300014: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface27
+    4300016: Wooden_Barrel:Mesh_polySurface12_polySurface10_polySurface8_polySurface6_polySurface28
+    4300018: Wooden_Barrel:Mesh_polySurface2
+    4300020: Wooden_Barrel:Mesh_polySurface26_polySurface12_polySurface10_polySurface8_polySurface6
+    4300022: Wooden_Barrel:Mesh_polySurface3
+    4300024: Wooden_Barrel:Mesh_polySurface5
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
