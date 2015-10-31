@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1553D9D0-BC10-1007-82ED-60DC5B59F8E5}</ProjectGuid>
+	<ProjectGuid>{18865691-ED81-F2A3-E29C-78244FB75F40}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -61,12 +61,14 @@
      <Compile Include="Assets\characterScripts\WinScreen.cs" />
      <Compile Include="Assets\enemies\enemy scripts\EnemyDoDamage.cs" />
      <Compile Include="Assets\enemies\enemy scripts\EnemySpawnLimit.cs" />
+     <Compile Include="Assets\enemies\enemy scripts\WizardDoDamage.cs" />
      <Compile Include="Assets\enemies\enemy scripts\enemyDamage.cs" />
      <Compile Include="Assets\enemyHealth.cs" />
      <Compile Include="Assets\healthbar.cs" />
      <Compile Include="Assets\player\Passive_SpellBlade.cs" />
      <Compile Include="Assets\player\buffs\Enemy.cs" />
      <Compile Include="Assets\player\buffs\Enemy_AI.cs" />
+     <Compile Include="Assets\player\buffs\Wizard.cs" />
      <Compile Include="Assets\player\buffs\enemyspawner.cs" />
      <Compile Include="Assets\player\damage.cs" />
      <Compile Include="Assets\player\playerHealth.cs" />
@@ -82,19 +84,13 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/program files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{50623A65-0D30-F99B-C0C1-9AC48E2073BC}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{B33D7F32-0847-3898-8479-09E201B6682A}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

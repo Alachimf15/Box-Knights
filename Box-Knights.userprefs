@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\DashingScript.cs">
+    <Files>
+      <File FileName="Assets\player\buffs\Wizard.cs" Line="19" Column="37" />
+      <File FileName="Assets\enemies\enemy scripts\WizardDoDamage.cs" Line="71" Column="6" />
+      <File FileName="Assets\player\buffs\Enemy.cs" Line="31" Column="2" />
+      <File FileName="Assets\enemies\enemy scripts\EnemyDoDamage.cs" Line="84" Column="4" />
+      <File FileName="Assets\Standard Assets\DashingScript.cs" Line="141" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

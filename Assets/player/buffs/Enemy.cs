@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour
 
 	void Update () 
 	{
-		float dist = Vector3.Distance(target.position, transform.position);
 		if(target)
 		{
 			navComponent.SetDestination(target.position);
