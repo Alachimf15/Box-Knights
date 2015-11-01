@@ -22,11 +22,14 @@ public class Wizard : MonoBehaviour
 
 	void Update () 
 	{
+
 		distanceAway = Vector3.Distance(target.position, transform.position);
 		if(target)
 		{
 			transform.LookAt (target);
 		}
-	}
+
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+    }
 
 }

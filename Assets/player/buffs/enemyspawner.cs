@@ -30,13 +30,13 @@ public class enemyspawner : MonoBehaviour
 	{
 		isSpawning = false;
 
-		GameObject[] tempEnemyArray = GameObject.FindGameObjectsWithTag ("enemyHitDetect");
+		//GameObject[] tempEnemyArray = GameObject.FindGameObjectsWithTag ("enemyHitDetect");
 
-		for(int i = 0; i < tempEnemyArray.Length; ++i)
-		{
-			enemyList.Add(tempEnemyArray[i]);
-			enemiesSpawned ++;
-		}
+		//for(int i = 0; i < tempEnemyArray.Length; ++i)
+		//{
+		//	enemyList.Add(tempEnemyArray[i]);
+		//	enemiesSpawned ++;
+		//}
 
 		if (blocker != null) {
 			blocker.GetComponent<blockers> ().enemies.Add (this.gameObject);

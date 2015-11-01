@@ -8,19 +8,17 @@ public class WizardDoDamage : MonoBehaviour
 
 	public float attackRange;
 
-	bool hasHit;
-
 	bool isAttacking;
 
 	bool playerInRange;
 
 	bool trackingPlayer;
 
+    bool canAttack = true;
+
 	public string[] enemyAttackAnimations;
 
 	public string[] enemyOtherAnimations;
-
-	public string findThisEnemyWeapon;
 
 	public GameObject enemyWeapon;
 
@@ -30,6 +28,8 @@ public class WizardDoDamage : MonoBehaviour
 
 	public Transform target;
 
+    public GameObject fireball; 
+
 	Wizard FindEnemyScript;
 	
 	void Start () 
@@ -37,15 +37,16 @@ public class WizardDoDamage : MonoBehaviour
 		//finds the palyer's transform in order to follow him
 		Player = GameObject.FindGameObjectWithTag ("Player");
 		target = Player.transform;
+        fireball = GameObject.Find("Fireball");
 
 		FindEnemyScript = this.GetComponent<Wizard> ();
 
-		enemyWeapon = transform.FindChild (findThisEnemyWeapon).gameObject;//arm_bicep_right/arm_forearm_right/Hand_Right/Mod_Weapon_SicklySabre").gameObject;
-		//enemyWeapon = transform.FindChild("enemyWeapon").gameObject;
+		enemyWeapon = transform.Find("body/arm_bicecp_right/arm_forearm_right/Hand_Right/WizardStaff").gameObject;
+                                                     
 
-		//Debug.Log (enemyWeapon.name);
-
-		FindEnemyScript.enabled = true;
+        //Debug.Log (enemyWeapon.name);
+        gameObject.GetComponent<Animation>().CrossFade(enemyOtherAnimations[0], .1f);
+        FindEnemyScript.enabled = true;
 	}
 
 	/**void OnTriggerEnter(Collider other) 
@@ -78,39 +79,39 @@ public class WizardDoDamage : MonoBehaviour
 		gameObject.GetComponent<Animation> ().PlayQueued (enemyAttackAnimations [2]);
 		//print ("You have hit the player, he currently has " + ph.currHealth + " health");
 
-		hasHit = true;
+        if(canAttack == true)
+        {
+            print("attacking player with ranged");
+            canAttack = false;
+
+            GameObject fireballClone = Instantiate(fireball, enemyWeapon.transform.position, Quaternion.identity) as GameObject;
+            WizardFireball fireballScript = fireballClone.GetComponent<WizardFireball>();
+            fireballScript.master = false;
+            Destroy(fireballClone, 5);
+
+            yield return new WaitForSeconds(timeToAttack);
+
+            canAttack = true;
+        }
+        
 
 
-		yield return new WaitForSeconds (timeToAttack);
+		
 
-		hasHit = false;
 
-		if(!playerInRange && hasHit == false)
-		{
-			FindEnemyScript.enabled = true;
-		}
-		else
-		{
-			transform.LookAt (target);
-			StartCoroutine(Attack(Player));
-		}
+		
 	}
 
 	void Update ()
 	{
+
 		if (Vector3.Distance(target.position, transform.position) <= attackRange) {
 			print ("player in range");
 
 			playerInRange = true;
+            StartCoroutine(Attack(Player));
+        }
 
-			StartCoroutine(Attack(Player));
-		}
-
-		if (hasHit == true) 
-		{
-			FindEnemyScript.enabled = false;
-
-		}
 		if (FindEnemyScript.enabled == true) 
 		{
 			trackingPlayer = true;
@@ -125,11 +126,11 @@ public class WizardDoDamage : MonoBehaviour
 
 				gameObject.GetComponent <Animation>().CrossFade (enemyOtherAnimations[0], .1f);
 		}
-
 		else
 		{
 			gameObject.GetComponent <Animation>().Stop (enemyOtherAnimations[0]);
 		}
+
 		if(gameObject.GetComponent <Animation>().IsPlaying (enemyAttackAnimations[1]))
 		{
 
@@ -140,16 +141,4 @@ public class WizardDoDamage : MonoBehaviour
 			enemyWeapon.GetComponent<Collider>().enabled = false;
 		}
 	}
-		
-
-	void OnTriggerExit(Collider other)
-	{
-		if (other.gameObject.tag == "Player")
-		{
-			playerInRange = false;
-		}
-	}
-
-
-
 }
