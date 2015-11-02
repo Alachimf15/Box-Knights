@@ -5,6 +5,8 @@ Project("{DD852F31-483B-E82D-352F-FC2B852AF14D}") = "Box-Knights", "Assembly-CSh
 EndProject
 Project("{DD852F31-483B-E82D-352F-FC2B852AF14D}") = "Box-Knights", "Assembly-CSharp.csproj", "{18865691-ED81-F2A3-E29C-78244FB75F40}"
 EndProject
+Project("{DD852F31-483B-E82D-352F-FC2B852AF14D}") = "Box-Knights", "Assembly-UnityScript.unityproj", "{101674F9-A486-D719-FE45-B0A4A69170A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{18865691-ED81-F2A3-E29C-78244FB75F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18865691-ED81-F2A3-E29C-78244FB75F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18865691-ED81-F2A3-E29C-78244FB75F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101674F9-A486-D719-FE45-B0A4A69170A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101674F9-A486-D719-FE45-B0A4A69170A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101674F9-A486-D719-FE45-B0A4A69170A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101674F9-A486-D719-FE45-B0A4A69170A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																													GlobalSection(MonoDevelopProperties) = preSolution
+																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

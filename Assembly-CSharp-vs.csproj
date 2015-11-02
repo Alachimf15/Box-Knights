@@ -61,14 +61,15 @@
      <Compile Include="Assets\characterScripts\WinScreen.cs" />
      <Compile Include="Assets\enemies\enemy scripts\EnemyDoDamage.cs" />
      <Compile Include="Assets\enemies\enemy scripts\EnemySpawnLimit.cs" />
+     <Compile Include="Assets\enemies\enemy scripts\Wizard.cs" />
      <Compile Include="Assets\enemies\enemy scripts\WizardDoDamage.cs" />
+     <Compile Include="Assets\enemies\enemy scripts\WizardFireball.cs" />
      <Compile Include="Assets\enemies\enemy scripts\enemyDamage.cs" />
      <Compile Include="Assets\enemyHealth.cs" />
      <Compile Include="Assets\healthbar.cs" />
      <Compile Include="Assets\player\Passive_SpellBlade.cs" />
      <Compile Include="Assets\player\buffs\Enemy.cs" />
      <Compile Include="Assets\player\buffs\Enemy_AI.cs" />
-     <Compile Include="Assets\player\buffs\Wizard.cs" />
      <Compile Include="Assets\player\buffs\enemyspawner.cs" />
      <Compile Include="Assets\player\damage.cs" />
      <Compile Include="Assets\player\playerHealth.cs" />
@@ -83,6 +84,12 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/program files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -32,24 +32,25 @@ public class enemyDamage : MonoBehaviour {
 	float pierceDamageBonus;
 	public GameObject enemy;
 	
+	public bool hitPlayer;
+	
 	GameObject player;
-
+	
 	void Start(){
 		player = GameObject.FindGameObjectWithTag ("Player");
-
+		
 	}
 	
 	
 	
 	void Update () {
 		
-
-		
 	}
 	
 	void OnTriggerEnter(Collider hit){
 		if(hit.gameObject.tag == ("Player"))
 		{
+			hitPlayer = true;
 			player = hit.gameObject;
 			crit = Random.Range(1,100);
 			//picks a random value from a range to determine how much damage to do to the player.
@@ -57,11 +58,11 @@ public class enemyDamage : MonoBehaviour {
 			//determines if you critically strike the target or not;
 			critical();
 			bonusDamageTypeFormula();
-	
-				damageNum = (int)(enemyNormDamage + arcaneDamageBonus + shadowDamageBonus + pierceDamageBonus);
-
-
-		
+			
+			damageNum = (int)(enemyNormDamage + arcaneDamageBonus + shadowDamageBonus + pierceDamageBonus);
+			
+			
+			
 		}
 	}
 	
@@ -110,5 +111,3 @@ public class enemyDamage : MonoBehaviour {
 //gui.guiText.material.color = Color(2.55,0,0,1);
 //}
 //}
-
-
