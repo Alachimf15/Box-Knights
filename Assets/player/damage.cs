@@ -44,7 +44,7 @@ public class damage : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider hit){
-		if(hit.gameObject.tag == ("enemy"))
+		if(hit.gameObject.tag == ("enemyHitDetect"))
 		{
 
 			crit = Random.Range(1,100);

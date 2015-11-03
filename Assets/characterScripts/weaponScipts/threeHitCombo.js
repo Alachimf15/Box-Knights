@@ -30,6 +30,8 @@ var dashCancelWindowEnd : float[];
 
 
 
+
+
 function Awake(){
 player = GameObject.FindGameObjectWithTag("Player");
 moveScript = player.gameObject.GetComponent(move);
@@ -38,14 +40,14 @@ moveScript = player.gameObject.GetComponent(move);
 
 
 function Update(){
+resetAttack();
 idle();
 //colliderHandler();
 //swapStopAnims();
 
-attackOneDashCancel();
-attackTwoDashCancel();
 attackThreeDashCancel();
-
+attackTwoDashCancel();
+attackOneDashCancel();
 
 mouseControl1();
 mouseControl2();
@@ -72,11 +74,7 @@ weapon.GetComponent.<Collider>().enabled = false;
 
  function idle(){
  //this is the code for idle. Will probably add flag for different states ie idle boolean flag, attacking boolean flag, dash boolean flag, etc.
- if((clickCount == 0)&&(playerStateScript.isAttacking == false)&&(playerStateScript.isDashing == false))
- {
- playerStateScript.isIdle = true;
 
-} 
 if(playerStateScript.isIdle == true)
 {
 player.GetComponent(move).enabled = true;
@@ -93,8 +91,7 @@ playerStateScript.isAttacking = false;
 function dashCancel(){
 if(playerStateScript.isDashing == true)
 {
-clickCount = 0;
-//playerStateScript.canAttack = false;
+
 
 
 
@@ -103,13 +100,19 @@ clickCount = 0;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
+ function resetAttack(){
+ if(clickCount == 0)
+ {
+ 	playerStateScript.isAttacking = false;
+ }
+ }
+ 
   function hit1Anim(){
   //states that if you left click while click Count(the variable for tracking which attack to fire off) is 0 meaning you're probably idle,
   //then clickCount adds 1 to signal firing off the first attack which disables movement, mouse control, and will probably play the attack
   //animation
-  if(playerStateScript.canAttack == true)
-  {
-  if(Input.GetMouseButtonDown(0)&&(clickCount == 0))
+
+  if(Input.GetMouseButtonDown(0)&&(clickCount == 0)&&(playerStateScript.canAttack == true))
   {
   //this will access the master player state script and change it to true if it was initially false
 
@@ -135,15 +138,14 @@ print(clickCount);
 
 if((GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime >= .95)&&(clickCount == 1))
   {
-  playerStateScript.isAttacking = false;
-  playerStateScript.canAttack = false;
+
   clickCount = 0;
   
   //playerStateScript.isIdle = true;
   print(clickCount);
   }
   }
-  }
+ 
   
   
   
@@ -223,8 +225,7 @@ print(clickCount);
 }
 if((GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime >= .95)&&(clickCount == 2))
 {
-playerStateScript.canAttack = false;
-playerStateScript.isAttacking = false;
+
 clickCount = 0;
   //playerStateScript.isIdle = true;
 print(clickCount);
@@ -309,7 +310,7 @@ print(clickCount);
 }
 if(GetComponent.<Animation>()[weaponComboHit[2]].normalizedTime >= .9)
 {
-playerStateScript.isAttacking = false;
+
 clickCount = 0;
 print(clickCount);
 

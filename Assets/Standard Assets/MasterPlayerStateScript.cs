@@ -13,6 +13,8 @@ public class MasterPlayerStateScript : MonoBehaviour
 	public bool canDash;
 	public bool isDashing;
 
+	public bool dashCancelReset;
+
 	public bool dashStop;
 
 	public bool canRotate;
@@ -35,20 +37,36 @@ public class MasterPlayerStateScript : MonoBehaviour
 
 	void Update () 
 	{
-		if(isDashing == true)
+		if((isDashing == true)&&(dashCancelReset == false))
 			{
+		
 			canAttack = false;
+			isIdle = false;
 			canBlock = false;
 			}
+		if((isDashing == true)&&(isAttacking == true))
+		{
+			canAttack = true;
+			isIdle = false;
+			canBlock = false;
+
+		}
 		if(isBlocking == true)
 		{
 			canAttack = false;
+			isIdle = false;
 			canDash = false;
 		}
-		if(isDashing == false && isAttacking == false)
+		if((isAttacking == false)&&(isBlocking == false)&&(isDashing == false))
 		{
+			isIdle = true;
+
+	}
+		if(isIdle == true)
+		{
+			canAttack = true;
+			isIdle = true;
 			canBlock = true;
 		}
-
 	}
 }
