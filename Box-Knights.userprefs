@@ -1,12 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\DashingScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\player\buffs\enemyspawner.cs">
     <Files>
       <File FileName="Assets\enemies\enemy scripts\WizardDoDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets\player\buffs\Enemy.cs" Line="31" Column="2" />
-      <File FileName="Assets\enemies\enemy scripts\EnemyDoDamage.cs" Line="84" Column="4" />
-      <File FileName="Assets\Standard Assets\DashingScript.cs" Line="141" Column="34" />
-      <File FileName="Assets\Block.cs" Line="1" Column="1" />
+      <File FileName="Assets\player\buffs\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemies\enemy scripts\EnemyDoDamage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Block.cs" Line="62" Column="1" />
+      <File FileName="Assets\characterScripts\weaponScipts\threeHitCombo.js" Line="1" Column="1" />
+      <File FileName="Assets\SwordFollowHand.cs" Line="1" Column="1" />
+      <File FileName="Assets\player\damage.cs" Line="1" Column="1" />
+      <File FileName="Assets\player\Passive_SpellBlade.cs" Line="1" Column="1" />
+      <File FileName="Assets\player\buffs\enemyspawner.cs" Line="41" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

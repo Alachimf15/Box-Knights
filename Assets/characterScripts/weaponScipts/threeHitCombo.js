@@ -41,7 +41,7 @@ moveScript = player.gameObject.GetComponent(move);
 
 function Update(){
 resetAttack();
-idle();
+
 //colliderHandler();
 //swapStopAnims();
 
@@ -61,13 +61,13 @@ hit1Anim();
 dashCancel();
 
 
-
+idle();
 }
 
 function Start(){
 weapon = GameObject.FindGameObjectWithTag("weapon");
 playerStateScript = player.gameObject.GetComponent(MasterPlayerStateScript);
-print(weapon.name);
+print("Your wielding " + weapon.name);
 weapon.GetComponent.<Collider>().enabled = false;
 }
 

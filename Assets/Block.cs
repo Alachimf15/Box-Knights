@@ -6,7 +6,9 @@ public class Block : MonoBehaviour
 {
 	
 	bool isBlocking;
-	
+
+	public string[] blockingAnims;
+
 	public float damageReduction;
 	
 	public int damageBlocked;
@@ -24,7 +26,7 @@ public class Block : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		//player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.FindGameObjectWithTag ("weaponPrefab");
 		GetComponent<MasterPlayerStateScript> ().canBlock = true;
 		shieldIcon = GameObject.FindGameObjectWithTag ("Icon_Shield");
 		
@@ -51,9 +53,13 @@ public class Block : MonoBehaviour
 		}
 		if(GetComponent<MasterPlayerStateScript>().isBlocking == true)
 		{
+			Debug.Log ("you are blocking now");	
 			shieldIcon.gameObject.SetActive(true);
 			shieldIcon.transform.Rotate(Vector3.up, Time.deltaTime * orbitSpeed);
-			Debug.Log ("you are blocking now");	
+			player.GetComponent<Animation>().CrossFade(blockingAnims[0], .2f);
+
+			player.GetComponent<Animation>().PlayQueued(blockingAnims[1]);
+
 			
 			
 		}
