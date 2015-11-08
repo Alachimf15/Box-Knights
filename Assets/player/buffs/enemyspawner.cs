@@ -25,6 +25,8 @@ public class enemyspawner : MonoBehaviour
 	public GameObject blocker;
 
 	public GameObject enemyCounter;
+
+	public string spawnerAnim;
 	
 	void Start () 
 	{
@@ -99,13 +101,17 @@ public class enemyspawner : MonoBehaviour
 		enemyList.Add (newEnemy);
 		enemiesSpawned++;
 		print (enemiesSpawned);
+		GetComponent<Animation> ().Play (spawnerAnim);
 		if (blocker != null) {
 			blocker.GetComponent<blockers> ().enemies.Add (newEnemy);
 			newEnemy.GetComponentInChildren<enemyHealth>().blocker = this.blocker;
 		}
+
+
 		yield return new WaitForSeconds (seconds);								// Pauses coroutine
 				
 		// Once an enemy is spawned a new enemy spawn timer begins counting down.
+		GetComponent<Animation> ().Stop (spawnerAnim);
 		isSpawning = false;
 	}
 

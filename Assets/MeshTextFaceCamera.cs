@@ -17,12 +17,12 @@ public class MeshTextFaceCamera : MonoBehaviour {
 		if(gameObject.tag == "damageText")
 		{
 			Vector3 currPosition = transform.position;
-			Vector3 destination =  new Vector3(currPosition.x, currPosition.y + .2f, currPosition.z);
+			Vector3 destination =  new Vector3(currPosition.x, currPosition.y + .65f, currPosition.z);
 			
-			float time = 5f;
+			float time = .2f;
 		
-			transform.position = Vector3.Lerp (currPosition, destination, time);
-			Destroy (gameObject, .5f);
+			transform.position = Vector3.Slerp(currPosition, destination, time);
+			Destroy (gameObject, .3f);
 
 		}
 	}

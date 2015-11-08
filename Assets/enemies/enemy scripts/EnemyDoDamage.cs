@@ -4,7 +4,7 @@ using System.Collections;
 //this is a script which will have the enemy track the player and attempt to hit him if he's in range of their attack radius
 public class EnemyDoDamage : MonoBehaviour 
 {
-	public int timeToAttack;
+	public int[] timeToAttack;
 	
 	bool hasHit;
 	
@@ -79,7 +79,7 @@ public class EnemyDoDamage : MonoBehaviour
 		
 		
 		
-		yield return new WaitForSeconds (timeToAttack);
+		yield return new WaitForSeconds (Random.Range (timeToAttack[0], timeToAttack[1]));
 		
 		hasHit = false;
 		

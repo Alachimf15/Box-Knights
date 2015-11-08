@@ -37,6 +37,10 @@ public class MasterPlayerStateScript : MonoBehaviour
 
 	void Update () 
 	{
+		if(isAttacking == true)
+		{
+			isIdle = false;
+		}
 		if((isDashing == true)&&(dashCancelReset == false))
 			{
 		

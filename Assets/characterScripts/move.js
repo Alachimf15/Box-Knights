@@ -78,24 +78,7 @@ function moved()
 	speed = maxSpeed;
 
 	}
-}
 
-function PlayerDash(vec)
-{
-	print("Dash");
-	if(stamina.Running == true)
-	{
-		//setting a new variable called destination and it is equal to the vector3 of the mouse position on the plane. The location of the mouse on the plane was a variable passed from the
-		//mousePickingScript
-		destination = vec;
-		//t
-		destination = destination - gameObject.transform.position;
-		//we only want to dash on the x and z so the player doesn't float in the air which is why the y of the destination vector3 is set to 0
-		destination.y = 0;
-		destination = Vector3.Normalize(destination);
-		destination = destination * 5;
-		
-		destination = destination + gameObject.transform.position;
-		stamina.Running = false;
-	}
+
+
 }
