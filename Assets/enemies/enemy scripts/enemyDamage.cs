@@ -91,23 +91,3 @@ public class enemyDamage : MonoBehaviour {
 		
 	}
 }
-
-
-//void damageColor(){
-//if(damageType == "arcane")
-//{
-//gui.guiText.material.color = Color(0,.6,3,1);
-//}
-//if(damageType == "shadow")
-//{
-//gui.guiText.material.color = Color(.7,0,.7,1);
-//}
-//if(damageType == "pierce")
-//{
-//gui.guiText.material.color = Color(2.31,2.34,0,1);
-//}
-//if(damageType == "normal")
-//{
-//gui.guiText.material.color = Color(2.55,0,0,1);
-//}
-//}

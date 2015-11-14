@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 private var player : GameObject;
 private var moveScript : move;
@@ -41,7 +41,8 @@ moveScript = player.gameObject.GetComponent(move);
 
 function Update(){
 resetAttack();
-
+dashCancel();
+idle();
 //colliderHandler();
 //swapStopAnims();
 
@@ -58,10 +59,9 @@ hit2Collider();
 hit2Anim();
 hit1Collider();
 hit1Anim();
-dashCancel();
 
 
-idle();
+
 }
 
 function Start(){
@@ -81,19 +81,18 @@ player.GetComponent(move).enabled = true;
 GetComponent.<Animation>().CrossFadeQueued(idleActions[0], .4f);
  weapon.GetComponent.<Collider>().enabled = false;
 GetComponent(mouse).enabled = true;
-player.gameObject.GetComponent(swapWeapons).enabled = true;
+//player.gameObject.GetComponent(swapWeapons).enabled = true;
 playerStateScript.canDash = true;
 playerStateScript.canAttack = true;
 playerStateScript.isAttacking = false;
+clickCount = 0;
 }
 }
 
 function dashCancel(){
 if(playerStateScript.isDashing == true)
 {
-
-
-
+weapon.GetComponent.<Collider>().enabled = false;
 
 }
 }
@@ -128,7 +127,7 @@ GetComponent(mouse).enabled = false;
   //plays first hit animation and disables weapon swapping
   GetComponent.<Animation>().Play(weaponComboHit[0]);
   GetComponent.<Animation>().CrossFadeQueued(weaponComboRecover[0]);
-player.gameObject.GetComponent(swapWeapons).enabled = false;
+//player.gameObject.GetComponent(swapWeapons).enabled = false;
 	playerStateScript.isAttacking = true;
 	playerStateScript.isIdle = false;
 print(clickCount);
@@ -154,7 +153,7 @@ if((GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime >= .95)&&(click
   function hit1Collider(){
   if((GetComponent.<Animation>().IsPlaying(weaponComboHit[0]))&&(clickCount == 1))
   {
-  if((GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime <= colliderOffStart[0])||(GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime >= colliderOffEnd[0]))
+  if((GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime <= colliderOffStart[0])||(GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime >= colliderOffEnd[0])||(playerStateScript.isDashing == true))
   {
   weapon.GetComponent.<Collider>().enabled = false;
   }
@@ -217,7 +216,7 @@ if(clickCount == 2)
 {
   GetComponent.<Animation>().Play(weaponComboHit[1]);
   GetComponent.<Animation>().CrossFadeQueued(weaponComboRecover[1]);
-player.gameObject.GetComponent(swapWeapons).enabled = false;
+//player.gameObject.GetComponent(swapWeapons).enabled = false;
 	playerStateScript.isAttacking = true;
 	playerStateScript.isIdle = false;
 print(clickCount);
@@ -238,7 +237,7 @@ print(clickCount);
   //animation collider off start var says when during the animation should the collider turn on, and the collider off end says when it should turn off
   if(GetComponent.<Animation>().IsPlaying(weaponComboHit[1]))
   {
-  if((GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime <= colliderOffStart[1])||(GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime >= colliderOffEnd[1]))
+  if((GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime <= colliderOffStart[1])||(GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime >= colliderOffEnd[1])||(playerStateScript.isDashing == true))
   {
    weapon.GetComponent.<Collider>().enabled = false;
   }
@@ -302,7 +301,7 @@ if(clickCount == 3)
 {
   GetComponent.<Animation>().Play(weaponComboHit[2]);
   GetComponent.<Animation>().CrossFadeQueued(weaponComboRecover[2]);
-player.gameObject.GetComponent(swapWeapons).enabled = false;
+//player.gameObject.GetComponent(swapWeapons).enabled = false;
 	playerStateScript.isAttacking = true;
 	playerStateScript.isIdle = false;
 print(clickCount);
@@ -322,7 +321,7 @@ print(clickCount);
   function hit3Collider(){
   if((GetComponent.<Animation>().IsPlaying(weaponComboHit[2]))&&(clickCount == 3))
   {
-  if((GetComponent.<Animation>()[weaponComboHit[2]].normalizedTime <= colliderOffStart[2])||(GetComponent.<Animation>()[weaponComboHit[2]].normalizedTime >= colliderOffEnd[2]))
+  if((GetComponent.<Animation>()[weaponComboHit[2]].normalizedTime <= colliderOffStart[2])||(GetComponent.<Animation>()[weaponComboHit[2]].normalizedTime >= colliderOffEnd[2])||(playerStateScript.isDashing == true))
   {
   weapon.GetComponent.<Collider>().enabled = false;
   }

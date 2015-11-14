@@ -35,11 +35,19 @@ public class damage : MonoBehaviour {
 
 	public GameObject damageText;
 
+	public GameObject trail;
+
 
 	
 	void Update () {
-		
+		if(GetComponent<Collider>().enabled == true)
+		{
+			trail.SetActive(true);
 
+		}
+		if(GetComponent<Collider>().enabled == false)
+
+			trail.SetActive(false);
 		
 	}
 	
@@ -55,11 +63,11 @@ public class damage : MonoBehaviour {
 			bonusDamageTypeFormula();
 			damageNum = (int)(playerDamage + arcaneDamageBonus + shadowDamageBonus + pierceDamageBonus);
 			hit.GetComponent<enemyHealth>().currHealth -= damageNum;
-			print("base damage is " + playerDamage + ". A bonus damage is " + arcaneDamageBonus + ". S bonus damage is " + shadowDamageBonus + ". P bonus damage is " + pierceDamageBonus);
+
 
 			damageNumberPopUp();
 			{
-
+				print("base damage is " + playerDamage + ". A bonus damage is " + arcaneDamageBonus + ". S bonus damage is " + shadowDamageBonus + ". P bonus damage is " + pierceDamageBonus);
 			}
 		}
 	}
@@ -94,7 +102,14 @@ public class damage : MonoBehaviour {
 		
 	}
 }
+	/*
+	void textColour()
+	{
+		damageText.
+
+	}
+}
 
 	
-
+*/
 	

@@ -22,6 +22,8 @@ public class Block : MonoBehaviour
 	GameObject shieldIcon;
 	
 	public float orbitSpeed;
+
+	bool specialMove;
 	
 	// Use this for initialization
 	void Start () 
@@ -35,6 +37,15 @@ public class Block : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		if(damageBlocked >= damageBlockedTotal)
+		{
+			print ("special ability ready");
+			specialMove = true;
+		}
+		if(damageBlocked < damageBlockedTotal)
+		{
+			specialMove = false;
+		}
 		if(Input.GetKeyDown("space"))
 		{
 			if(GetComponent<MasterPlayerStateScript>().canBlock == true)

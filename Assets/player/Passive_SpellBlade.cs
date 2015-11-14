@@ -21,7 +21,7 @@ public class Passive_SpellBlade : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider weapon){
-		if(weapon.gameObject.tag == "enemy")
+		if(weapon.gameObject.tag == "enemyHitDetect")
 		{
 			attackCounter++;
 		}
