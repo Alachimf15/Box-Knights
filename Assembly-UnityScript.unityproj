@@ -46,13 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\buffs\passive_Spellblade.js" />
-     <Compile Include="Assets\characterScripts\mouse.js" />
-     <Compile Include="Assets\characterScripts\move.js" />
-     <Compile Include="Assets\characterScripts\swapWeapons.js" />
-     <Compile Include="Assets\characterScripts\weaponScipts\damage.js" />
-     <Compile Include="Assets\characterScripts\weaponScipts\threeHitCombo.js" />
-     <Compile Include="Assets\enemies\enemy scripts\health.js" />
+     <Compile Include="Assets\Scripts\Enemy\health.js" />
+     <Compile Include="Assets\Scripts\Player\mouse.js" />
+     <Compile Include="Assets\Scripts\Player\move.js" />
+     <Compile Include="Assets\Scripts\Weapons\damage.js" />
+     <Compile Include="Assets\Scripts\Weapons\threeHitCombo.js" />
+     <Compile Include="Assets\Scripts\passive_Spellblade.js" />
+     <Compile Include="Assets\Scripts\swapWeapons.js" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
  <Reference Include="UnityEngine.UI">

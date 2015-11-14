@@ -46,10 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\DashingScript.cs" />
      <Compile Include="Assets\Standard Assets\MasterPlayerStateScript.cs" />
      <Compile Include="Assets\Standard Assets\Stamina.cs" />
-     <Compile Include="Assets\Standard Assets\dashTerrainDetect.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
  <Reference Include="UnityEngine.UI">
