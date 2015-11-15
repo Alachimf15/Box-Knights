@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 // LookAtMouse will cause an object to rotate toward the cursor, along the y axis.
 //

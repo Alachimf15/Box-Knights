@@ -37,6 +37,7 @@ public class MasterPlayerStateScript : MonoBehaviour
 
 	void Update () 
 	{
+
 		if(isAttacking == true)
 		{
 			isIdle = false;

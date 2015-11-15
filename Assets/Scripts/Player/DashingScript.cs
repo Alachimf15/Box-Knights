@@ -18,6 +18,8 @@ public class DashingScript : MonoBehaviour
 	GameObject dashDetector;
 	
 	GameObject floor;
+
+	GameObject rayLocation;
 	
 	bool dashStop;
 	
@@ -25,12 +27,15 @@ public class DashingScript : MonoBehaviour
 	
 	Stamina stamina;
 	
+	Coroutine inst;
+	
 	void Start()
 	{
 		dashDetector = GameObject.FindGameObjectWithTag ("weaponPrefab");
 		playerState = GetComponent <MasterPlayerStateScript>();
 		stamina = GetComponent<Stamina> ();
 		floor = GameObject.FindGameObjectWithTag ("Floor");
+		rayLocation = GameObject.Find ("floorLocator");
 		//playerCollider = GetComponent<CharacterController> ();
 	}
 	
@@ -39,8 +44,10 @@ public class DashingScript : MonoBehaviour
 	//was released, then wasMouseDown is false and prints thyat the mouse was released. It basically is like an analogue switch detecting that the mouse was pressed then released
 	void Update ()
 	{
+
 		playerPosition = transform.position;
 		currPosition = gameObject.transform.position;
+
 		if (Input.GetMouseButtonDown (1) && !wasMouseDown && stamina.Running && playerState.canDash == true && playerState.isDashing == false) 
 		{
 			// Do stuff
@@ -62,16 +69,19 @@ public class DashingScript : MonoBehaviour
 			float distance = 1000f;
 			if (Physics.Raycast (ray, distance)) 
 			{
-				Plane rayHit = new Plane(Vector3.up, gameObject.transform.localPosition);
-				
+				Plane rayHit = new Plane(Vector3.up, gameObject.transform.position);
+			
+
 				if(rayHit.Raycast(ray, out distance))
 				{
+
+
 					Vector3 someVector = ray.GetPoint(distance);
 					//Debug.Log (someVector);
 					//t
 					Vector3 direction = (((someVector - gameObject.transform.localPosition).normalized) * dashDistance);
 					//we only want to dash on the x and z so the player doesn't float in the air which is why the y of the destination vector3 is set to 0
-					direction.y = floor.transform.position.y;
+					
 					Debug.Log ("we are dashing towards" + direction);
 					
 					
@@ -82,7 +92,8 @@ public class DashingScript : MonoBehaviour
 					
 					
 					
-					StartCoroutine(DashLerp (currPosition, destination));
+					inst = StartCoroutine(DashLerp (currPosition, destination));
+					
 					
 					
 					//Vector3	destination = direction] * 5;
@@ -90,6 +101,8 @@ public class DashingScript : MonoBehaviour
 					//destination = destination + gameObject.transform.position;
 					
 				}
+		
+				
 				stamina.Running = false;
 			}
 			
@@ -115,21 +128,29 @@ public class DashingScript : MonoBehaviour
 		}
 	}
 	
-	void OnTriggerEnter(Collider other)
+	void OnTriggerStay(Collider other)
 	{
-		if(other.gameObject.tag == "Terrain" && playerState.isDashing == true)
+		if(other.CompareTag("Terrain") && playerState.isDashing == true)
 		{
+			Debug.Log ("your dash has been canceled :(");
 			dashStop = true;
-			
+			StopCoroutine(inst);
+			playerState.isDashing = false;
 			
 			
 		}
+	}
+
+	void RayShoot()
+	{
+
+
 	}
 	
 	void OnTriggerExit(Collider other)
 	{
 		
-		if(other.gameObject.tag == "Terrain")
+		if(other.CompareTag("Terrain"))
 		{
 			dashStop = false;
 			
@@ -139,35 +160,27 @@ public class DashingScript : MonoBehaviour
 	IEnumerator DashLerp (Vector3 currPosition, Vector3 destination)
 		
 	{
+
 		//playerCollider.enabled = false;
 		float time = 0;
-		
-		playerState.canAttack = false;
-		playerState.isAttacking = false;
-		
 		playerState.isDashing = true;
-		playerState.canDash = false;
-		
-		
-		
-		while(transform.position != destination && time <= 1)
+
+				while(transform.position != destination && time <= 1)
 		{
-			if(dashStop == true)
-			{
-				destination = playerPosition;
-				
-			}
+
 			transform.position = Vector3.Lerp (currPosition, destination, time);
 			
 			time += Time.deltaTime / .15f;
 			
 			yield return new WaitForEndOfFrame();
+
 		}
+				playerState.isDashing = false;
 		
-		playerState.canDash = true;
-		playerState.isDashing = false;
-		playerState.canAttack = true;
+
 		//playerCollider.enabled = true;
-	}
+	
+		
 }
 
+}

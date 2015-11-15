@@ -60,7 +60,11 @@ hit2Anim();
 hit1Collider();
 hit1Anim();
 
+if(playerStateScript.isAttacking == true)
+{
+player.GetComponent(move).speed *= 0f;
 
+}
 
 }
 
@@ -77,7 +81,7 @@ weapon.GetComponent.<Collider>().enabled = false;
 
 if(playerStateScript.isIdle == true)
 {
-player.GetComponent(move).enabled = true;
+
 GetComponent.<Animation>().CrossFadeQueued(idleActions[0], .4f);
  weapon.GetComponent.<Collider>().enabled = false;
 GetComponent(mouse).enabled = true;
@@ -117,7 +121,7 @@ weapon.GetComponent.<Collider>().enabled = false;
 
   
   clickCount = 1;
-  player.GetComponent(move).enabled = false;
+
 GetComponent(mouse).enabled = false;
 
 
@@ -209,7 +213,7 @@ if(GetComponent.<Animation>().IsPlaying(weaponComboHit[0]))
 if((Input.GetMouseButtonDown(0))&&((hitCollisionWindow[0] <= GetComponent.<Animation>()[weaponComboHit[0]].normalizedTime)))
 {
 clickCount = 2;
-player.GetComponent(move).enabled = false;
+
 GetComponent(mouse).enabled = true;
 }
 if(clickCount == 2)
@@ -294,7 +298,7 @@ if(GetComponent.<Animation>().IsPlaying(weaponComboHit[1]))
 if((Input.GetMouseButtonDown(0))&&((hitCollisionWindow[1] <= GetComponent.<Animation>()[weaponComboHit[1]].normalizedTime)))
 {
 clickCount = 3;
-player.GetComponent(move).enabled = false;
+
 
 }
 if(clickCount == 3)
