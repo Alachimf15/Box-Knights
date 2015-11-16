@@ -1,7 +1,7 @@
 #pragma strict
 
 private var player : GameObject;
-private var moveScript : move;
+
 private var rotateScript : mouse;
 private var playerStateScript : MasterPlayerStateScript;
 //checks how many times the player has pressed the attack button
@@ -34,7 +34,7 @@ var dashCancelWindowEnd : float[];
 
 function Awake(){
 player = GameObject.FindGameObjectWithTag("Player");
-moveScript = player.gameObject.GetComponent(move);
+
 
 }
 
@@ -60,18 +60,14 @@ hit2Anim();
 hit1Collider();
 hit1Anim();
 
-if(playerStateScript.isAttacking == true)
-{
-player.GetComponent(move).speed *= 0f;
 
-}
 
 }
 
 function Start(){
 weapon = GameObject.FindGameObjectWithTag("weapon");
 playerStateScript = player.gameObject.GetComponent(MasterPlayerStateScript);
-print("Your wielding " + weapon.name);
+print("You're wielding " + weapon.name);
 weapon.GetComponent.<Collider>().enabled = false;
 }
 

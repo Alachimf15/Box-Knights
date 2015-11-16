@@ -9,6 +9,8 @@ public class MasterPlayerStateScript : MonoBehaviour
 {
 	public bool canAttack;
 	public bool isAttacking;
+
+	public bool canMove;
 	
 	public bool canDash;
 	public bool isDashing;
@@ -32,25 +34,29 @@ public class MasterPlayerStateScript : MonoBehaviour
 	{
 		canAttack = true;
 		canDash = true;
+		canMove = true;
 	}
 	
 
 	void Update () 
 	{
-
+	
 		if(isAttacking == true)
 		{
+
+			canMove = false;
 			isIdle = false;
 		}
 		if((isDashing == true)&&(dashCancelReset == false))
 			{
-		
+			canMove = false;
 			canAttack = false;
 			isIdle = false;
 			canBlock = false;
 			}
 		if((isDashing == true)&&(isAttacking == true))
 		{
+			canMove = false;
 			canAttack = true;
 			isIdle = false;
 			canBlock = false;
@@ -69,6 +75,7 @@ public class MasterPlayerStateScript : MonoBehaviour
 	}
 		if(isIdle == true)
 		{
+			canMove = true;
 			canAttack = true;
 			isIdle = true;
 			canBlock = true;

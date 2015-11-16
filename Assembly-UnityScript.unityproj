@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Enemy\health.js" />
      <Compile Include="Assets\Scripts\Player\mouse.js" />
-     <Compile Include="Assets\Scripts\Player\move.js" />
      <Compile Include="Assets\Scripts\Weapons\damage.js" />
      <Compile Include="Assets\Scripts\Weapons\threeHitCombo.js" />
      <Compile Include="Assets\Scripts\passive_Spellblade.js" />
@@ -67,10 +66,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B33D7F32-0847-3898-8479-09E201B6682A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
