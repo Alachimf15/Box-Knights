@@ -27,7 +27,11 @@ public class MasterPlayerStateScript : MonoBehaviour
 	public bool canBlock;
 	public bool isBlocking;
 
-	public bool canSwitchWeapons;
+	//public bool canSwitchWeapons;
+
+	public bool canPerformSpecial;
+	public bool specialCasted;
+	public bool specialAvailable;
 
 	
 	void Start () 
@@ -75,6 +79,7 @@ public class MasterPlayerStateScript : MonoBehaviour
 	}
 		if(isIdle == true)
 		{
+			canPerformSpecial = true;
 			canMove = true;
 			canAttack = true;
 			isIdle = true;

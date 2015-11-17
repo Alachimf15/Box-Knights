@@ -40,11 +40,17 @@ public class Block : MonoBehaviour
 		if(damageBlocked >= damageBlockedTotal)
 		{
 			print ("special ability ready");
-			specialMove = true;
+			GetComponent<MasterPlayerStateScript>().specialAvailable = true;
 		}
 		if(damageBlocked < damageBlockedTotal)
 		{
-			specialMove = false;
+			GetComponent<MasterPlayerStateScript>().specialAvailable = false;
+		}
+		if(GetComponent<MasterPlayerStateScript>().specialCasted == true)
+		{
+
+			damageBlocked = 0;
+			GetComponent<MasterPlayerStateScript>().specialCasted = false;
 		}
 		if(Input.GetKeyDown("space"))
 		{

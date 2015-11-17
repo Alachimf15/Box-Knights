@@ -1,10 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\MasterPlayerStateScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\SpecialMove.cs">
     <Files>
+      <File FileName="Assets\Scripts\Player\SpecialMove.cs" Line="43" Column="12" />
       <File FileName="Assets\Scripts\Weapons\threeHitCombo.js" Line="104" Column="3" />
       <File FileName="Assets\Standard Assets\MasterPlayerStateScript.cs" Line="40" Column="2" />
       <File FileName="Assets\Scripts\Player\PlayerMove.cs" Line="120" Column="5" />
+      <File FileName="Assets\Scripts\Player\Block.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\buffs\enemyspawner.cs" Line="111" Column="37" />
+      <File FileName="Assets\Scripts\UI\winConditions.cs" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

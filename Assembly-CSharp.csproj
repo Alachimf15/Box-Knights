@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Player\DashingScript.cs" />
      <Compile Include="Assets\Scripts\Player\Passive_SpellBlade.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Player\SpecialMove.cs" />
      <Compile Include="Assets\Scripts\Player\blockers.cs" />
      <Compile Include="Assets\Scripts\Player\damage.cs" />
      <Compile Include="Assets\Scripts\Player\dashTerrainDetect.cs" />
@@ -96,6 +97,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B33D7F32-0847-3898-8479-09E201B6682A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
