@@ -84,7 +84,6 @@
      <Compile Include="Assets\Scripts\World\NewArea.cs" />
      <Compile Include="Assets\Scripts\World\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\World\SwingingMovement.cs" />
-     <Compile Include="Assets\Scripts\World\rotator.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
  <Reference Include="UnityEngine.UI">
