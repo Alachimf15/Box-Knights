@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Player\damage.cs" />
      <Compile Include="Assets\Scripts\Player\dashTerrainDetect.cs" />
      <Compile Include="Assets\Scripts\Player\playerHealth.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\DoorTrigger.cs" />
      <Compile Include="Assets\Scripts\Tutorial\IntroManager.cs" />
      <Compile Include="Assets\Scripts\Tutorial\TutorialTrigger.cs" />
      <Compile Include="Assets\Scripts\UI\InstructionsScene.cs" />

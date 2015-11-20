@@ -5,100 +5,85 @@ using UnityEngine.UI;
 
 public class IntroManager : MonoBehaviour
 {
-    public List<GameObject> introTriggerList = new List<GameObject>();
+    //public List<GameObject> introTriggerList = new List<GameObject>();
     private Collider nextIntroTriggerCollider;
-    private int tutorialCounter = 0;
-    private int tutorialTextCount = 0;
-    //private PlayerMovement playerMovement;
+    public int tutorialCounter = 0;
     private bool tutorialTextDisplayed;
+    private bool tutorialTextEnabled;
     public bool displayFirstTutorial;
+
+    public UnityEngine.UI.Text continueText;
 
     public List<UnityEngine.UI.Text> tutorialText = new List<UnityEngine.UI.Text>();
     public Image bgimg;
 
-    private CharacterController playerController;
-
     // Use this for initialization
     void Start()
     {
-        playerController = FindObjectOfType<CharacterController>();
-        //playerMovement = playerController.GetComponent<PlayerMovement>();
-        nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
+        //m_ricochetLine = LevelManager.instance.currentLine;
+        //nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
+
+
 
         if (displayFirstTutorial == true)
         {
-            DisplayTutorialText(0);
+            PerformIntroActions(0);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("e") && tutorialTextDisplayed == true)
+       /** 
+       if (Input.GetMouseButtonDown(0) && tutorialTextDisplayed == true)
         {
-            RemoveTutorialText(tutorialTextCount);
+            RemoveTutorialText(tutorialCounter);
         }
+        **/
     }
 
-    public void PerformIntroActions(bool enabMech)
+    public void PerformIntroActions(int t)
     {
-        if(tutorialCounter == 0)
+        Debug.Log(tutorialCounter + " " + t);
+        if (tutorialCounter == t)
         {
-            if(enabMech == true)
-            {
-                // add code for enabling mechanic here
-            }
-
-            DisplayTutorialText(tutorialTextCount);
-            tutorialCounter++;
-            nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
-            nextIntroTriggerCollider.enabled = true;
-        }
-
-        else if (tutorialCounter == 1)
-        {
-            DisplayTutorialText(tutorialTextCount);
-            tutorialCounter++;
-            nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
-            nextIntroTriggerCollider.enabled = true;
-        }
-
-        else if (tutorialCounter == 2)
-        {
-            DisplayTutorialText(tutorialTextCount);
-            tutorialCounter++;
-            nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
-            nextIntroTriggerCollider.enabled = true;
-        }
-
-        else if (tutorialCounter == 3)
-        {
-            DisplayTutorialText(tutorialTextCount);
-            tutorialCounter++;
-            nextIntroTriggerCollider = introTriggerList[tutorialCounter].gameObject.GetComponent<Collider>();
-            nextIntroTriggerCollider.enabled = true;
-        }
-
-        else 
-        {
-            DisplayTutorialText(tutorialTextCount);
+            DisplayTutorialText(t);
         }
     }
 
     private void DisplayTutorialText(int t)
     {
+        if (tutorialTextEnabled == true)
+        {
+            RemoveTutorialText(tutorialCounter - 1);
+        }
+
         bgimg.enabled = true;
+       // continueText.enabled = true;
         tutorialText[t].enabled = true;
-        //playerMovement.SetMovement(false);
         tutorialTextDisplayed = true;
+        tutorialTextEnabled = true;
+        tutorialCounter++;
     }
 
     private void RemoveTutorialText(int t)
     {
         bgimg.enabled = false;
+       // continueText.enabled = false;
         tutorialText[t].enabled = false;
-        //playerMovement.SetMovement(true);
         tutorialTextDisplayed = false;
-        tutorialTextCount++;
+        tutorialTextEnabled = false;
+        
+    }
+
+    public void ToggleTutorialText(bool textstate)
+    {
+        if (tutorialTextEnabled == true)
+        {
+            bgimg.enabled = textstate;
+            continueText.enabled = textstate;
+            tutorialText[tutorialCounter].enabled = textstate;
+            tutorialTextDisplayed = textstate;
+        }
     }
 }
