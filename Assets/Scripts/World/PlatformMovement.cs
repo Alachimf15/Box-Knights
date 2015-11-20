@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlatformMovement : MonoBehaviour {
 
+    //[SerializeField]
+    // private Transform endTarget;
     [SerializeField]
     private float speed;
 
@@ -22,75 +24,76 @@ public class PlatformMovement : MonoBehaviour {
     private bool startRegular = false;
     private Vector3 startPosition = Vector3.zero;
 
+    // This variable needs to be serialized for platforms ON from START - Omer
     [SerializeField]
     private bool active = false;
 
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         startPosition = transform.position;
         if (!moveOpposite)
             startRegular = true;
         else
             startRegular = false;
-	}
-	
-	// Update is called once per frame
+    }
+
+    // Update is called once per frame
     void Update()
     {
         if (active)
         {
-      /*      if(!isVertical && !isHorizontalX && !isHorizontalZ)
-            {
-                // remember, 10 - 5 is 5, so target - position is always your direction.
-                Vector3 dir = endTarget.position - transform.position;
+            /*      if(!isVertical && !isHorizontalX && !isHorizontalZ)
+                  {
+                      // remember, 10 - 5 is 5, so target - position is always your direction.
+                      Vector3 dir = endTarget.position - transform.position;
 
-                // magnitude is the total length of a vector.
-                // getting the magnitude of the direction gives us the amount left to move
-                float dist = dir.magnitude;
+                      // magnitude is the total length of a vector.
+                      // getting the magnitude of the direction gives us the amount left to move
+                      float dist = dir.magnitude;
 
-                // this makes the length of dir 1 so that you can multiply by it.
-                dir = dir.normalized;
+                      // this makes the length of dir 1 so that you can multiply by it.
+                      dir = dir.normalized;
 
-                // the amount we can move this frame
-                float move = speed * Time.deltaTime;
+                      // the amount we can move this frame
+                      float move = speed * Time.deltaTime;
 
-                // limit our move to what we can travel.
-                if (move > dist) move = dist;
+                      // limit our move to what we can travel.
+                      if (move > dist) move = dist;
 
-                // apply the movement to the object.
-                transform.Translate(dir * move);
-            }*/
+                      // apply the movement to the object.
+                      transform.Translate(dir * move);
+                  }*/
 
             // Alternative way to move objects without a Transform variable but a distance variable - Omer
-            if((isVertical || isHorizontalX || isHorizontalZ) && !isLooping)
+            if ((isVertical || isHorizontalX || isHorizontalZ) && !isLooping)
             {
-                if(isVertical && startRegular && transform.position.y <= startPosition.y + incrementValue)
+                if (isVertical && startRegular && transform.position.y <= startPosition.y + incrementValue)
                 {
                     Vector3 vertPos = transform.position;
                     vertPos.y += Time.deltaTime * speed;
                     transform.position = vertPos;
 
                     //Set to inactive once reached target distance
-                    if(transform.position.y >= startPosition.y + incrementValue)
+                    if (transform.position.y >= startPosition.y + incrementValue)
                     {
                         ResetObject();
                     }
 
                 }
-				else if(isVertical && !startRegular && transform.position.y >= startPosition.y - incrementValue)
-				{
-					Vector3 vertPos = transform.position;
-					vertPos.y -= Time.deltaTime * speed;
-					transform.position = vertPos;
+                else if (isVertical && !startRegular && transform.position.y >= startPosition.y - incrementValue)
+                {
+                    Vector3 vertPos = transform.position;
+                    vertPos.y -= Time.deltaTime * speed;
+                    transform.position = vertPos;
 
                     if (transform.position.y <= startPosition.y - incrementValue)
                     {
                         ResetObject();
                     }
                 }
-                else if(isHorizontalX && startRegular && transform.position.x <= startPosition.x + incrementValue)
+                else if (isHorizontalX && startRegular && transform.position.x <= startPosition.x + incrementValue)
                 {
                     Vector3 vertPos = transform.position;
                     vertPos.x += Time.deltaTime * speed;
@@ -135,39 +138,18 @@ public class PlatformMovement : MonoBehaviour {
                     }
                 }
             }
-            else if(isLooping && isVertical)
+            else if (isLooping && isVertical)
             {
-                if(startRegular)
-                {
-                    MoveVerticalLoop(incrementValue, startPosition.y);
-                }
-                else
-                {
-                    MoveVerticalLoop(startPosition.y, incrementValue);
-                }
+                MoveVerticalLoop(startPosition.y, incrementValue);
             }
             else if (isLooping && isHorizontalZ)
             {
-                if (startRegular)
-                {
-                    MoveHorizontalZLoop(incrementValue, startPosition.z);
-                }
-                else
-                {
-                    MoveHorizontalZLoop(startPosition.z, incrementValue);
-                }
+                MoveHorizontalZLoop(startPosition.z, incrementValue);
             }
-			else if (isLooping && isHorizontalX)
-			{
-				if (startRegular)
-				{
-					MoveHorizontalXLoop(incrementValue, startPosition.x);
-				}
-				else
-				{
-					MoveHorizontalXLoop(startPosition.x, incrementValue);
-				}
-			}
+            else if (isLooping && isHorizontalX)
+            {
+                MoveHorizontalXLoop(startPosition.x, incrementValue);
+            }
         }
     }
 
@@ -181,10 +163,10 @@ public class PlatformMovement : MonoBehaviour {
     {
         if (!moveOpposite)
         {
-            if (transform.position.y >= value)
+            if (transform.position.y < value + value2)
             {
                 Vector3 vertPos = transform.position;
-                vertPos.y -= Time.deltaTime * speed;
+                vertPos.y += Time.deltaTime * speed;
                 transform.position = vertPos;
             }
             else
@@ -192,10 +174,10 @@ public class PlatformMovement : MonoBehaviour {
         }
         else
         {
-            if (transform.position.y <= value2)
+            if (transform.position.y > value - value2)
             {
                 Vector3 vertPos = transform.position;
-                vertPos.y += Time.deltaTime * speed;
+                vertPos.y -= Time.deltaTime * speed;
                 transform.position = vertPos;
             }
             else
@@ -207,10 +189,10 @@ public class PlatformMovement : MonoBehaviour {
     {
         if (!moveOpposite)
         {
-            if (transform.position.z >= value)
+            if (transform.position.z < value + value2)
             {
                 Vector3 vertPos = transform.position;
-                vertPos.z -= Time.deltaTime * speed;
+                vertPos.z += Time.deltaTime * speed;
                 transform.position = vertPos;
             }
             else
@@ -218,10 +200,10 @@ public class PlatformMovement : MonoBehaviour {
         }
         else
         {
-            if (transform.position.z <= value2)
+            if (transform.position.z > value - value2)
             {
                 Vector3 vertPos = transform.position;
-                vertPos.z += Time.deltaTime * speed;
+                vertPos.z -= Time.deltaTime * speed;
                 transform.position = vertPos;
             }
             else
@@ -229,38 +211,38 @@ public class PlatformMovement : MonoBehaviour {
         }
     }
 
-	private void MoveHorizontalXLoop(float value, float value2)
-	{
-		if (!moveOpposite)
-		{
-			if (transform.position.x >= value)
-			{
-				Vector3 vertPos = transform.position;
-				vertPos.x -= Time.deltaTime * speed;
-				transform.position = vertPos;
-			}
-			else
-				moveOpposite = true;
-		}
-		else
-		{
-			if (transform.position.x <= value2)
-			{
-				Vector3 vertPos = transform.position;
-				vertPos.x += Time.deltaTime * speed;
-				transform.position = vertPos;
-			}
-			else
-				moveOpposite = false;
-		}
-	}
+    private void MoveHorizontalXLoop(float value, float value2)
+    {
+        if (!moveOpposite)
+        {
+            if (transform.position.x < value + value2)
+            {
+                Vector3 vertPos = transform.position;
+                vertPos.x += Time.deltaTime * speed;
+                transform.position = vertPos;
+            }
+            else
+                moveOpposite = true;
+        }
+        else
+        {
+            if (transform.position.x > value - value2)
+            {
+                Vector3 vertPos = transform.position;
+                vertPos.x -= Time.deltaTime * speed;
+                transform.position = vertPos;
+            }
+            else
+                moveOpposite = false;
+        }
+    }
 
-    public void OnPortTriggerable()
+    public void ActivatePlatform()
     {
         active = true;
     }
 
-    public void OnPortTriggerableDeactivate()
+    public void DeactivatePlatform()
     {
         active = false;
     }
