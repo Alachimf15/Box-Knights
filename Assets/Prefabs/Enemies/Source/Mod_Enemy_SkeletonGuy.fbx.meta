@@ -1,0 +1,438 @@
+fileFormatVersion: 2
+guid: 8d287b6bd2cb395439cda9a580cb2061
+timeCreated: 1443953566
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_bicecp_right
+    100002: arm_bicep_Left
+    100004: arm_forearm_left
+    100006: arm_forearm_right
+    100008: body
+    100010: foot_left
+    100012: foot_right
+    100014: Hand_Left
+    100016: Hand_Right
+    100018: Mask
+    100020: //RootNode
+    100022: shin_left
+    100024: shin_right
+    100026: thigh_left
+    100028: thigh_right
+    100030: Central
+    100032: Central.001
+    400000: arm_bicecp_right
+    400002: arm_bicep_Left
+    400004: arm_forearm_left
+    400006: arm_forearm_right
+    400008: body
+    400010: foot_left
+    400012: foot_right
+    400014: Hand_Left
+    400016: Hand_Right
+    400018: Mask
+    400020: //RootNode
+    400022: shin_left
+    400024: shin_right
+    400026: thigh_left
+    400028: thigh_right
+    400030: Central
+    400032: Central.001
+    2300000: arm_bicecp_right
+    2300002: arm_bicep_Left
+    2300004: arm_forearm_left
+    2300006: arm_forearm_right
+    2300008: body
+    2300010: foot_left
+    2300012: foot_right
+    2300014: Hand_Left
+    2300016: Hand_Right
+    2300018: Mask
+    2300020: shin_left
+    2300022: shin_right
+    2300024: thigh_left
+    2300026: thigh_right
+    2300028: Central
+    2300030: Central.001
+    3300000: arm_bicecp_right
+    3300002: arm_bicep_Left
+    3300004: arm_forearm_left
+    3300006: arm_forearm_right
+    3300008: body
+    3300010: foot_left
+    3300012: foot_right
+    3300014: Hand_Left
+    3300016: Hand_Right
+    3300018: Mask
+    3300020: shin_left
+    3300022: shin_right
+    3300024: thigh_left
+    3300026: thigh_right
+    3300028: Central
+    3300030: Central.001
+    4300000: body
+    4300002: arm_bicecp_right
+    4300004: arm_forearm_right
+    4300006: Hand_Right
+    4300008: arm_bicep_Left
+    4300010: arm_forearm_left
+    4300012: Hand_Left
+    4300014: Mask
+    4300016: foot_left
+    4300018: thigh_left
+    4300020: shin_left
+    4300022: foot_right
+    4300024: thigh_right
+    4300026: shin_right
+    4300028: Central
+    4300030: Central.001
+    7400000: Mod_SkeletonEnemy_AttackAnim
+    7400002: Mod_SkeletonEnemy_WalkLoopAnim
+    7400004: Mod_SkeletonEnemy_AttackWindUpAnim
+    7400006: Mod_SkeletonEnemy_TakeDamageAnim
+    7400008: Mod_SkeletonEnemy_AttackWindDownAnim
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Mod_SkeletonEnemy_WalkLoopAnim
+      takeName: Scene
+      firstFrame: 59
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/arm_bicecp_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right/Hand_Right
+        weight: 1
+      - path: body/arm_bicep_Left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left/Hand_Left
+        weight: 1
+      - path: body/Mask
+        weight: 1
+      - path: foot_left
+        weight: 1
+      - path: foot_left/shin_left
+        weight: 1
+      - path: foot_left/thigh_left
+        weight: 1
+      - path: foot_right
+        weight: 1
+      - path: foot_right/thigh_right
+        weight: 1
+      - path: shin_right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Mod_SkeletonEnemy_AttackAnim
+      takeName: Scene
+      firstFrame: 18
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/arm_bicecp_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right/Hand_Right
+        weight: 1
+      - path: body/arm_bicep_Left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left/Hand_Left
+        weight: 1
+      - path: body/Mask
+        weight: 1
+      - path: foot_left
+        weight: 1
+      - path: foot_left/shin_left
+        weight: 1
+      - path: foot_left/thigh_left
+        weight: 1
+      - path: foot_right
+        weight: 1
+      - path: foot_right/thigh_right
+        weight: 1
+      - path: shin_right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Mod_SkeletonEnemy_AttackWindUpAnim
+      takeName: Scene
+      firstFrame: 1
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/arm_bicecp_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right/Hand_Right
+        weight: 1
+      - path: body/arm_bicep_Left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left/Hand_Left
+        weight: 1
+      - path: body/Mask
+        weight: 1
+      - path: foot_left
+        weight: 1
+      - path: foot_left/shin_left
+        weight: 1
+      - path: foot_left/thigh_left
+        weight: 1
+      - path: foot_right
+        weight: 1
+      - path: foot_right/thigh_right
+        weight: 1
+      - path: shin_right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Mod_SkeletonEnemy_TakeDamageAnim
+      takeName: Scene
+      firstFrame: 90
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/arm_bicecp_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right/Hand_Right
+        weight: 1
+      - path: body/arm_bicep_Left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left/Hand_Left
+        weight: 1
+      - path: body/Mask
+        weight: 1
+      - path: foot_left
+        weight: 1
+      - path: foot_left/shin_left
+        weight: 1
+      - path: foot_left/thigh_left
+        weight: 1
+      - path: foot_right
+        weight: 1
+      - path: foot_right/thigh_right
+        weight: 1
+      - path: shin_right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Mod_SkeletonEnemy_AttackWindDownAnim
+      takeName: Scene
+      firstFrame: 33
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/arm_bicecp_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right
+        weight: 1
+      - path: body/arm_bicecp_right/arm_forearm_right/Hand_Right
+        weight: 1
+      - path: body/arm_bicep_Left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left
+        weight: 1
+      - path: body/arm_bicep_Left/arm_forearm_left/Hand_Left
+        weight: 1
+      - path: body/Mask
+        weight: 1
+      - path: foot_left
+        weight: 1
+      - path: foot_left/shin_left
+        weight: 1
+      - path: foot_left/thigh_left
+        weight: 1
+      - path: foot_right
+        weight: 1
+      - path: foot_right/thigh_right
+        weight: 1
+      - path: shin_right
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

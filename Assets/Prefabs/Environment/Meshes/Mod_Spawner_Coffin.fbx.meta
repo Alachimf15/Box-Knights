@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: dc9f8b6216c1f104491017874ad91b18
+timeCreated: 1446892774
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cylinder.000
+    100002: //RootNode
+    100004: Mod_Coffin_Lid
+    400000: Cylinder.000
+    400002: //RootNode
+    400004: Mod_Coffin_Lid
+    2300000: Cylinder.000
+    2300002: //RootNode
+    2300004: Mod_Coffin_Lid
+    3300000: Cylinder.000
+    3300002: //RootNode
+    3300004: Mod_Coffin_Lid
+    4300000: Cylinder.001
+    4300002: Cylinder.000
+    4300004: Mod_Coffin_base
+    4300006: Mod_Coffin_Lid
+    7400000: Cylinder.001|Cylinder.000Action
+    7400002: Cylinder.001|Cylinder.001Action
+    7400004: Cylinder.001|HelmetBro_Rig_01:ControlsAction
+    7400006: Cylinder.001|HelmetBro_Rig_01:ns_cape_center1_ctrl_grpAction
+    7400008: Cylinder.001|HelmetBro_Rig_01:ns_cape_center2_ctrl_grpAction
+    7400010: Cylinder.001|HelmetBro_Rig_01:ns_cape_center3_ctrl_grpAction
+    7400012: Cylinder.001|HelmetBro_Rig_01:ns_cape_l_1_ctrl_grp1Action
+    7400014: Cylinder.001|HelmetBro_Rig_01:ns_cape_l_3_ctrl_grpAction
+    7400016: Cylinder.001|HelmetBro_Rig_01:ns_cape_r_1_ctrl_grpAction
+    7400018: Cylinder.001|HelmetBro_Rig_01:ns_cape_r_2_ctrl_grpAction
+    7400020: Cylinder.001|HelmetBro_Rig_01:ns_cape_r_3_ctrl_grpAction
+    7400022: Cylinder.001|HelmetBro_Rig_01:ns_head_ctrl_grpAction
+    7400024: Cylinder.001|HelmetBro_Rig_01:ns_head_ctrl|Take 001|BaseLayer
+    7400026: Cylinder.001|HelmetBro_Rig_01:ns_hip_ctrl_grpAction
+    7400028: Cylinder.001|HelmetBro_Rig_01:ns_hip_ctrl|Take 001|BaseLayer
+    7400030: Cylinder.001|HelmetBro_Rig_01:ns_l_clavicle_ctrl_grpAction
+    7400032: Cylinder.001|HelmetBro_Rig_01:ns_l_clavicle_ctrl|Take 001|BaseLayer
+    7400034: Cylinder.001|HelmetBro_Rig_01:ns_l_elbow_ctrl|Take 001|BaseLayer
+    7400036: Cylinder.001|HelmetBro_Rig_01:ns_l_FK_elbow_ctrl_grpAction
+    7400038: Cylinder.001|HelmetBro_Rig_01:ns_l_FK_shoulder_ctrl_grpAction
+    7400040: Cylinder.001|HelmetBro_Rig_01:ns_l_FK_shoulder_ctrl|Take 001|BaseLayer
+    7400042: Cylinder.001|HelmetBro_Rig_01:ns_l_FK_wrist_ctrl_grpAction
+    7400044: Cylinder.001|HelmetBro_Rig_01:ns_l_FK_wrist_ctrl|Take 001|BaseLayer
+    7400046: Cylinder.001|HelmetBro_Rig_01:ns_l_foot_ctrl_grpAction
+    7400048: Cylinder.001|HelmetBro_Rig_01:ns_l_foot_ctrl|Take 001|BaseLayer
+    7400050: Cylinder.001|HelmetBro_Rig_01:ns_l_hand_ctrl_grpAction
+    7400052: Cylinder.001|HelmetBro_Rig_01:ns_l_hand_root_sdk_grpAction
+    7400054: Cylinder.001|HelmetBro_Rig_01:ns_l_index1_fk_ctrl_grpAction
+    7400056: Cylinder.001|HelmetBro_Rig_01:ns_l_index1_fk_ctrl|Take 001|BaseLayer
+    7400058: Cylinder.001|HelmetBro_Rig_01:ns_l_index2_fk_ctrl_grpAction
+    7400060: Cylinder.001|HelmetBro_Rig_01:ns_l_index2_fk_ctrl|Take 001|BaseLayer
+    7400062: Cylinder.001|HelmetBro_Rig_01:ns_l_index3_fk_ctrl_grpAction
+    7400064: Cylinder.001|HelmetBro_Rig_01:ns_l_index3_fk_ctrl|Take 001|BaseLayer
+    7400066: Cylinder.001|HelmetBro_Rig_01:ns_l_knee_ctrl_grpAction
+    7400068: Cylinder.001|HelmetBro_Rig_01:ns_l_knee_ctrl|Take 001|BaseLayer
+    7400070: Cylinder.001|HelmetBro_Rig_01:ns_l_middle1_fk_ctrl_grpAction
+    7400072: Cylinder.001|HelmetBro_Rig_01:ns_l_middle1_fk_ctrl|Take 001|BaseLayer
+    7400074: Cylinder.001|HelmetBro_Rig_01:ns_l_middle2_fk_ctrl_grpAction
+    7400076: Cylinder.001|HelmetBro_Rig_01:ns_l_middle2_fk_ctrl|Take 001|BaseLayer
+    7400078: Cylinder.001|HelmetBro_Rig_01:ns_l_middle3_fk_ctrl_grpAction
+    7400080: Cylinder.001|HelmetBro_Rig_01:ns_l_middle3_fk_ctrl|Take 001|BaseLayer
+    7400082: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky1_fk_ctrl_grpAction
+    7400084: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky1_fk_ctrl|Take 001|BaseLayer
+    7400086: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky2_fk_ctrl_grpAction
+    7400088: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky2_fk_ctrl|Take 001|BaseLayer
+    7400090: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky3_fk_ctrl_grpAction
+    7400092: Cylinder.001|HelmetBro_Rig_01:ns_l_pinky3_fk_ctrl|Take 001|BaseLayer
+    7400094: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb1_fk_ctrl_grpAction
+    7400096: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb1_fk_ctrl|Take 001|BaseLayer
+    7400098: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb2_fk_ctrl_grpAction
+    7400100: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb2_fk_ctrl|Take 001|BaseLayer
+    7400102: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb3_fk_ctrl_grpAction
+    7400104: Cylinder.001|HelmetBro_Rig_01:ns_l_thumb3_fk_ctrl|Take 001|BaseLayer
+    7400106: Cylinder.001|HelmetBro_Rig_01:ns_neck_ctrl_grpAction
+    7400108: Cylinder.001|HelmetBro_Rig_01:ns_neck_ctrl|Take 001|BaseLayer
+    7400110: Cylinder.001|HelmetBro_Rig_01:ns_plume1_ctrl_grpAction
+    7400112: Cylinder.001|HelmetBro_Rig_01:ns_plume1_ctrl|Take 001|BaseLayer
+    7400114: Cylinder.001|HelmetBro_Rig_01:ns_plume2_ctrl_grpAction
+    7400116: Cylinder.001|HelmetBro_Rig_01:ns_plume2_ctrl|Take 001|BaseLayer
+    7400118: Cylinder.001|HelmetBro_Rig_01:ns_plume3_ctrl_grpAction
+    7400120: Cylinder.001|HelmetBro_Rig_01:ns_plume3_ctrl|Take 001|BaseLayer
+    7400122: Cylinder.001|HelmetBro_Rig_01:ns_plume4_ctrl_grpAction
+    7400124: Cylinder.001|HelmetBro_Rig_01:ns_plume4_ctrl|Take 001|BaseLayer
+    7400126: Cylinder.001|HelmetBro_Rig_01:ns_plume5_ctrl_grpAction
+    7400128: Cylinder.001|HelmetBro_Rig_01:ns_plume5_ctrl|Take 001|BaseLayer
+    7400130: Cylinder.001|HelmetBro_Rig_01:ns_plume6_ctrl_grpAction
+    7400132: Cylinder.001|HelmetBro_Rig_01:ns_plume6_ctrl|Take 001|BaseLayer
+    7400134: Cylinder.001|HelmetBro_Rig_01:ns_r_clavicle_ctrl_grpAction
+    7400136: Cylinder.001|HelmetBro_Rig_01:ns_r_clavicle_ctrl|Take 001|BaseLayer
+    7400138: Cylinder.001|HelmetBro_Rig_01:ns_r_elbow_ctrl|Take 001|BaseLayer
+    7400140: Cylinder.001|HelmetBro_Rig_01:ns_r_FK_elbow_ctrl_grpAction
+    7400142: Cylinder.001|HelmetBro_Rig_01:ns_r_FK_shoulder_ctrl_grpAction
+    7400144: Cylinder.001|HelmetBro_Rig_01:ns_r_FK_wrist_ctrl_grpAction
+    7400146: Cylinder.001|HelmetBro_Rig_01:ns_r_FK_wrist_ctrl|Take 001|BaseLayer
+    7400148: Cylinder.001|HelmetBro_Rig_01:ns_r_foot_ctrl_grpAction
+    7400150: Cylinder.001|HelmetBro_Rig_01:ns_r_foot_ctrl|Take 001|BaseLayer
+    7400152: Cylinder.001|HelmetBro_Rig_01:ns_r_hand_ctrl_grpAction
+    7400154: Cylinder.001|HelmetBro_Rig_01:ns_r_index1_fk_ctrl_grpAction
+    7400156: Cylinder.001|HelmetBro_Rig_01:ns_r_index1_fk_ctrl|Take 001|BaseLayer
+    7400158: Cylinder.001|HelmetBro_Rig_01:ns_r_index2_fk_ctrl_grpAction
+    7400160: Cylinder.001|HelmetBro_Rig_01:ns_r_index2_fk_ctrl|Take 001|BaseLayer
+    7400162: Cylinder.001|HelmetBro_Rig_01:ns_r_index3_fk_ctrl_grpAction
+    7400164: Cylinder.001|HelmetBro_Rig_01:ns_r_index3_fk_ctrl|Take 001|BaseLayer
+    7400166: Cylinder.001|HelmetBro_Rig_01:ns_r_knee_ctrl_grpAction
+    7400168: Cylinder.001|HelmetBro_Rig_01:ns_r_knee_ctrl|Take 001|BaseLayer
+    7400170: Cylinder.001|HelmetBro_Rig_01:ns_r_middle1_fk_ctrl_grpAction
+    7400172: Cylinder.001|HelmetBro_Rig_01:ns_r_middle1_fk_ctrl|Take 001|BaseLayer
+    7400174: Cylinder.001|HelmetBro_Rig_01:ns_r_middle2_fk_ctrl_grpAction
+    7400176: Cylinder.001|HelmetBro_Rig_01:ns_r_middle2_fk_ctrl|Take 001|BaseLayer
+    7400178: Cylinder.001|HelmetBro_Rig_01:ns_r_middle3_fk_ctrl_grpAction
+    7400180: Cylinder.001|HelmetBro_Rig_01:ns_r_middle3_fk_ctrl|Take 001|BaseLayer
+    7400182: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky1_fk_ctrl_grpAction
+    7400184: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky1_fk_ctrl|Take 001|BaseLayer
+    7400186: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky2_fk_ctrl_grpAction
+    7400188: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky2_fk_ctrl|Take 001|BaseLayer
+    7400190: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky3_fk_ctrl_grpAction
+    7400192: Cylinder.001|HelmetBro_Rig_01:ns_r_pinky3_fk_ctrl|Take 001|BaseLayer
+    7400194: Cylinder.001|HelmetBro_Rig_01:ns_r_shoulder_ctrl|Take 001|BaseLayer
+    7400196: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb1_fk_ctrl_grpAction
+    7400198: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb1_fk_ctrl|Take 001|BaseLayer
+    7400200: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb2_fk_ctrl_grpAction
+    7400202: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb2_fk_ctrl|Take 001|BaseLayer
+    7400204: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb3_fk_ctrl_grpAction
+    7400206: Cylinder.001|HelmetBro_Rig_01:ns_r_thumb3_fk_ctrl|Take 001|BaseLayer
+    7400208: Cylinder.001|HelmetBro_Rig_01:ns_root_ctrl_grpAction
+    7400210: Cylinder.001|HelmetBro_Rig_01:ns_root_ctrl|Take 001|BaseLayer
+    7400212: Cylinder.001|HelmetBro_Rig_01:ns_spine1_ctrl_grpAction
+    7400214: Cylinder.001|HelmetBro_Rig_01:ns_spine1_ctrl|Take 001|BaseLayer
+    7400216: Cylinder.001|HelmetBro_Rig_01:ns_spine2_ctrl_grp1Action
+    7400218: Cylinder.001|HelmetBro_Rig_01:ns_spine2_ctrl|Take 001|BaseLayer
+    7400220: Cylinder.001|HelmetBro_Rig_01:ns_spine3_ctrl_grpAction
+    7400222: Cylinder.001|HelmetBro_Rig_01:ns_spine3_ctrl|Take 001|BaseLayer
+    7400224: Cylinder.001|HelmetBro_Rig_01:ns_spine4_ctrl_grpAction
+    7400226: Cylinder.001|HelmetBro_Rig_01:ns_spine4_ctrl|Take 001|BaseLayer
+    7400228: Cylinder.001|HelmetBro_Rig_01:ns_world_ctrl_grpAction
+    7400230: Cylinder.001|HelmetBro_Rig_01:ns_world_ctrl|Take 001|BaseLayer
+    7400232: Cylinder.001|HelmetBro_Rig_01:ScaleAction
+    7400234: Cylinder.001|KnightAction
+    7400236: Cylinder.001|ShieldAction
+    7400238: Cylinder.001|SwordAction
+    7400240: Cylinder.000|Cylinder.000Action
+    7400242: Cylinder.000|Cylinder.001Action
+    7400244: Cylinder.000|HelmetBro_Rig_01:ControlsAction
+    7400246: Cylinder.000|HelmetBro_Rig_01:ns_cape_center1_ctrl_grpAction
+    7400248: Cylinder.000|HelmetBro_Rig_01:ns_cape_center2_ctrl_grpAction
+    7400250: Cylinder.000|HelmetBro_Rig_01:ns_cape_center3_ctrl_grpAction
+    7400252: Cylinder.000|HelmetBro_Rig_01:ns_cape_l_1_ctrl_grp1Action
+    7400254: Cylinder.000|HelmetBro_Rig_01:ns_cape_l_3_ctrl_grpAction
+    7400256: Cylinder.000|HelmetBro_Rig_01:ns_cape_r_1_ctrl_grpAction
+    7400258: Cylinder.000|HelmetBro_Rig_01:ns_cape_r_2_ctrl_grpAction
+    7400260: Cylinder.000|HelmetBro_Rig_01:ns_cape_r_3_ctrl_grpAction
+    7400262: Cylinder.000|HelmetBro_Rig_01:ns_head_ctrl_grpAction
+    7400264: Cylinder.000|HelmetBro_Rig_01:ns_head_ctrl|Take 001|BaseLayer
+    7400266: Cylinder.000|HelmetBro_Rig_01:ns_hip_ctrl_grpAction
+    7400268: Cylinder.000|HelmetBro_Rig_01:ns_hip_ctrl|Take 001|BaseLayer
+    7400270: Cylinder.000|HelmetBro_Rig_01:ns_l_clavicle_ctrl_grpAction
+    7400272: Cylinder.000|HelmetBro_Rig_01:ns_l_clavicle_ctrl|Take 001|BaseLayer
+    7400274: Cylinder.000|HelmetBro_Rig_01:ns_l_elbow_ctrl|Take 001|BaseLayer
+    7400276: Cylinder.000|HelmetBro_Rig_01:ns_l_FK_elbow_ctrl_grpAction
+    7400278: Cylinder.000|HelmetBro_Rig_01:ns_l_FK_shoulder_ctrl_grpAction
+    7400280: Cylinder.000|HelmetBro_Rig_01:ns_l_FK_shoulder_ctrl|Take 001|BaseLayer
+    7400282: Cylinder.000|HelmetBro_Rig_01:ns_l_FK_wrist_ctrl_grpAction
+    7400284: Cylinder.000|HelmetBro_Rig_01:ns_l_FK_wrist_ctrl|Take 001|BaseLayer
+    7400286: Cylinder.000|HelmetBro_Rig_01:ns_l_foot_ctrl_grpAction
+    7400288: Cylinder.000|HelmetBro_Rig_01:ns_l_foot_ctrl|Take 001|BaseLayer
+    7400290: Cylinder.000|HelmetBro_Rig_01:ns_l_hand_ctrl_grpAction
+    7400292: Cylinder.000|HelmetBro_Rig_01:ns_l_hand_root_sdk_grpAction
+    7400294: Cylinder.000|HelmetBro_Rig_01:ns_l_index1_fk_ctrl_grpAction
+    7400296: Cylinder.000|HelmetBro_Rig_01:ns_l_index1_fk_ctrl|Take 001|BaseLayer
+    7400298: Cylinder.000|HelmetBro_Rig_01:ns_l_index2_fk_ctrl_grpAction
+    7400300: Cylinder.000|HelmetBro_Rig_01:ns_l_index2_fk_ctrl|Take 001|BaseLayer
+    7400302: Cylinder.000|HelmetBro_Rig_01:ns_l_index3_fk_ctrl_grpAction
+    7400304: Cylinder.000|HelmetBro_Rig_01:ns_l_index3_fk_ctrl|Take 001|BaseLayer
+    7400306: Cylinder.000|HelmetBro_Rig_01:ns_l_knee_ctrl_grpAction
+    7400308: Cylinder.000|HelmetBro_Rig_01:ns_l_knee_ctrl|Take 001|BaseLayer
+    7400310: Cylinder.000|HelmetBro_Rig_01:ns_l_middle1_fk_ctrl_grpAction
+    7400312: Cylinder.000|HelmetBro_Rig_01:ns_l_middle1_fk_ctrl|Take 001|BaseLayer
+    7400314: Cylinder.000|HelmetBro_Rig_01:ns_l_middle2_fk_ctrl_grpAction
+    7400316: Cylinder.000|HelmetBro_Rig_01:ns_l_middle2_fk_ctrl|Take 001|BaseLayer
+    7400318: Cylinder.000|HelmetBro_Rig_01:ns_l_middle3_fk_ctrl_grpAction
+    7400320: Cylinder.000|HelmetBro_Rig_01:ns_l_middle3_fk_ctrl|Take 001|BaseLayer
+    7400322: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky1_fk_ctrl_grpAction
+    7400324: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky1_fk_ctrl|Take 001|BaseLayer
+    7400326: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky2_fk_ctrl_grpAction
+    7400328: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky2_fk_ctrl|Take 001|BaseLayer
+    7400330: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky3_fk_ctrl_grpAction
+    7400332: Cylinder.000|HelmetBro_Rig_01:ns_l_pinky3_fk_ctrl|Take 001|BaseLayer
+    7400334: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb1_fk_ctrl_grpAction
+    7400336: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb1_fk_ctrl|Take 001|BaseLayer
+    7400338: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb2_fk_ctrl_grpAction
+    7400340: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb2_fk_ctrl|Take 001|BaseLayer
+    7400342: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb3_fk_ctrl_grpAction
+    7400344: Cylinder.000|HelmetBro_Rig_01:ns_l_thumb3_fk_ctrl|Take 001|BaseLayer
+    7400346: Cylinder.000|HelmetBro_Rig_01:ns_neck_ctrl_grpAction
+    7400348: Cylinder.000|HelmetBro_Rig_01:ns_neck_ctrl|Take 001|BaseLayer
+    7400350: Cylinder.000|HelmetBro_Rig_01:ns_plume1_ctrl_grpAction
+    7400352: Cylinder.000|HelmetBro_Rig_01:ns_plume1_ctrl|Take 001|BaseLayer
+    7400354: Cylinder.000|HelmetBro_Rig_01:ns_plume2_ctrl_grpAction
+    7400356: Cylinder.000|HelmetBro_Rig_01:ns_plume2_ctrl|Take 001|BaseLayer
+    7400358: Cylinder.000|HelmetBro_Rig_01:ns_plume3_ctrl_grpAction
+    7400360: Cylinder.000|HelmetBro_Rig_01:ns_plume3_ctrl|Take 001|BaseLayer
+    7400362: Cylinder.000|HelmetBro_Rig_01:ns_plume4_ctrl_grpAction
+    7400364: Cylinder.000|HelmetBro_Rig_01:ns_plume4_ctrl|Take 001|BaseLayer
+    7400366: Cylinder.000|HelmetBro_Rig_01:ns_plume5_ctrl_grpAction
+    7400368: Cylinder.000|HelmetBro_Rig_01:ns_plume5_ctrl|Take 001|BaseLayer
+    7400370: Cylinder.000|HelmetBro_Rig_01:ns_plume6_ctrl_grpAction
+    7400372: Cylinder.000|HelmetBro_Rig_01:ns_plume6_ctrl|Take 001|BaseLayer
+    7400374: Cylinder.000|HelmetBro_Rig_01:ns_r_clavicle_ctrl_grpAction
+    7400376: Cylinder.000|HelmetBro_Rig_01:ns_r_clavicle_ctrl|Take 001|BaseLayer
+    7400378: Cylinder.000|HelmetBro_Rig_01:ns_r_elbow_ctrl|Take 001|BaseLayer
+    7400380: Cylinder.000|HelmetBro_Rig_01:ns_r_FK_elbow_ctrl_grpAction
+    7400382: Cylinder.000|HelmetBro_Rig_01:ns_r_FK_shoulder_ctrl_grpAction
+    7400384: Cylinder.000|HelmetBro_Rig_01:ns_r_FK_wrist_ctrl_grpAction
+    7400386: Cylinder.000|HelmetBro_Rig_01:ns_r_FK_wrist_ctrl|Take 001|BaseLayer
+    7400388: Cylinder.000|HelmetBro_Rig_01:ns_r_foot_ctrl_grpAction
+    7400390: Cylinder.000|HelmetBro_Rig_01:ns_r_foot_ctrl|Take 001|BaseLayer
+    7400392: Cylinder.000|HelmetBro_Rig_01:ns_r_hand_ctrl_grpAction
+    7400394: Cylinder.000|HelmetBro_Rig_01:ns_r_index1_fk_ctrl_grpAction
+    7400396: Cylinder.000|HelmetBro_Rig_01:ns_r_index1_fk_ctrl|Take 001|BaseLayer
+    7400398: Cylinder.000|HelmetBro_Rig_01:ns_r_index2_fk_ctrl_grpAction
+    7400400: Cylinder.000|HelmetBro_Rig_01:ns_r_index2_fk_ctrl|Take 001|BaseLayer
+    7400402: Cylinder.000|HelmetBro_Rig_01:ns_r_index3_fk_ctrl_grpAction
+    7400404: Cylinder.000|HelmetBro_Rig_01:ns_r_index3_fk_ctrl|Take 001|BaseLayer
+    7400406: Cylinder.000|HelmetBro_Rig_01:ns_r_knee_ctrl_grpAction
+    7400408: Cylinder.000|HelmetBro_Rig_01:ns_r_knee_ctrl|Take 001|BaseLayer
+    7400410: Cylinder.000|HelmetBro_Rig_01:ns_r_middle1_fk_ctrl_grpAction
+    7400412: Cylinder.000|HelmetBro_Rig_01:ns_r_middle1_fk_ctrl|Take 001|BaseLayer
+    7400414: Cylinder.000|HelmetBro_Rig_01:ns_r_middle2_fk_ctrl_grpAction
+    7400416: Cylinder.000|HelmetBro_Rig_01:ns_r_middle2_fk_ctrl|Take 001|BaseLayer
+    7400418: Cylinder.000|HelmetBro_Rig_01:ns_r_middle3_fk_ctrl_grpAction
+    7400420: Cylinder.000|HelmetBro_Rig_01:ns_r_middle3_fk_ctrl|Take 001|BaseLayer
+    7400422: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky1_fk_ctrl_grpAction
+    7400424: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky1_fk_ctrl|Take 001|BaseLayer
+    7400426: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky2_fk_ctrl_grpAction
+    7400428: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky2_fk_ctrl|Take 001|BaseLayer
+    7400430: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky3_fk_ctrl_grpAction
+    7400432: Cylinder.000|HelmetBro_Rig_01:ns_r_pinky3_fk_ctrl|Take 001|BaseLayer
+    7400434: Cylinder.000|HelmetBro_Rig_01:ns_r_shoulder_ctrl|Take 001|BaseLayer
+    7400436: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb1_fk_ctrl_grpAction
+    7400438: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb1_fk_ctrl|Take 001|BaseLayer
+    7400440: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb2_fk_ctrl_grpAction
+    7400442: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb2_fk_ctrl|Take 001|BaseLayer
+    7400444: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb3_fk_ctrl_grpAction
+    7400446: Cylinder.000|HelmetBro_Rig_01:ns_r_thumb3_fk_ctrl|Take 001|BaseLayer
+    7400448: Cylinder.000|HelmetBro_Rig_01:ns_root_ctrl_grpAction
+    7400450: Cylinder.000|HelmetBro_Rig_01:ns_root_ctrl|Take 001|BaseLayer
+    7400452: Cylinder.000|HelmetBro_Rig_01:ns_spine1_ctrl_grpAction
+    7400454: Cylinder.000|HelmetBro_Rig_01:ns_spine1_ctrl|Take 001|BaseLayer
+    7400456: Cylinder.000|HelmetBro_Rig_01:ns_spine2_ctrl_grp1Action
+    7400458: Cylinder.000|HelmetBro_Rig_01:ns_spine2_ctrl|Take 001|BaseLayer
+    7400460: Cylinder.000|HelmetBro_Rig_01:ns_spine3_ctrl_grpAction
+    7400462: Cylinder.000|HelmetBro_Rig_01:ns_spine3_ctrl|Take 001|BaseLayer
+    7400464: Cylinder.000|HelmetBro_Rig_01:ns_spine4_ctrl_grpAction
+    7400466: Cylinder.000|HelmetBro_Rig_01:ns_spine4_ctrl|Take 001|BaseLayer
+    7400468: Cylinder.000|HelmetBro_Rig_01:ns_world_ctrl_grpAction
+    7400470: Cylinder.000|HelmetBro_Rig_01:ns_world_ctrl|Take 001|BaseLayer
+    7400472: Cylinder.000|HelmetBro_Rig_01:ScaleAction
+    7400474: Cylinder.000|KnightAction
+    7400476: Cylinder.000|ShieldAction
+    7400478: Cylinder.000|SwordAction
+    7400480: Coffin_SpawningAnim
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Coffin_SpawningAnim
+      takeName: Scene
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mod_Coffin_Lid
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
